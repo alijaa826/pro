@@ -12,7 +12,7 @@
 
 /* Ukuran dasar HTML */
 html {
-  font-size: 60%;
+  font-size: 50%;
   overflow-x: hidden;
 }
 
@@ -105,28 +105,28 @@ section {
 }
 
 .home-content h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
-  color: var(--main-color);
+  color: var(--text-color)
 }
 
 .home-content h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 1rem 0;
   color: var(--second-color);
 }
 
 .home-content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.8;
   color: var(--text-color);
 }
 
 .home-img img {
-  width: 32vw;
+  width: 25vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -138,21 +138,171 @@ section {
     0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
-.skills {
-  padding: 10rem 12%;
-  text-align: center;
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;   /* ❗ ini bikin icon rata tengah */
 }
 
-.skills .heading {
-  font-size: 5rem;
-  margin-bottom: 5rem;
-  font-weight: 700;
+.social-icons a {
+  font-size: 3.5rem;
+  color: var(--main-color);
+  transition: 0.3s ease-in-out;
 }
 
-.skills-container {
+.social-icons a:hover {
+  color: var(--text-color);
+  transform: scale(1.2);
+}
+
+.about {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 10rem;
+  background-color: var(--second-bg-color);
+}
+
+.about-img img {
+  width: 32vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+}
+
+.about-img img:hover {
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
+}
+
+.about-content h2 {
+  font-size: 7rem;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 1.8rem;
+}
+
+.about-content .btn {
+  margin: 3rem 0;
+}
+
+/* Skills Section */
+.skills {
+  min-height: 100vh;
+  padding: 10rem 12%;
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 7rem;
+  margin-bottom: 5rem;
+  color: var(--text-color);
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.skills-icons i {
+  font-size: 5rem; /* besar, mirip ukuran foto lingkaran */
+  color: var(--main-color);
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.skills-icons i:hover {
+  color: var(--text-color);
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(--main-color),
+              0 0 100px var(--main-color);
+  transform: scale(1.1);
+}
+.projects {
+  min-height: 100vh;
+  padding: 10rem 12%;
+  background: var(--second-bg-color); /* biar beda layer dengan section lain */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.projects-content h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.projects-content h2 span {
+  color: var(--main-color);
+}
+
+.projects-content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+  color: var(--text-color);
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.project-box {
+  background: var(--bg-color);
+  padding: 4rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 25px rgba(128, 0, 0, 0.4);
+  transition: 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+}
+
+.project-box i {
+  font-size: 6rem;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.project-box h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.project-box p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--text-color);
 }
