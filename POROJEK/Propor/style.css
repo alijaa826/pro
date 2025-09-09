@@ -146,7 +146,7 @@ section {
 }
 
 .social-icons a {
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: var(--main-color);
   transition: 0.3s ease-in-out;
 }
@@ -164,31 +164,70 @@ section {
   background-color: var(--second-bg-color);
 }
 
-.about-img img {
-  width: 32vw;
-  border-radius: 50%;
-  box-shadow: 0 0 25px var(--main-color);
-  transition: 0.4s ease-in-out;
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--second-bg-color);
+  padding: 8rem 12%;
 }
 
-.about-img img:hover {
-  box-shadow: 0 0 25px var(--main-color),
-              0 0 50px var(--main-color),
-              0 0 100px var(--main-color);
-}
 
 .about-content h2 {
-  font-size: 7rem;
-  text-align: left;
+  font-size: 6rem;
+  margin-bottom: 2rem;
 }
 
 .about-content p {
-  font-size: 1.8rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-.about-content .btn {
-  margin: 3rem 0;
+.about-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
 }
+
+.about-info .info-box {
+  background: var(--bg-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 15px rgba(128,0,0,0.4);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+}
+
+.about-info i {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: var(--main-color);
+  color: var(--text-color);
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--text-color);
+  color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+
+
+
 
 /* Skills Section */
 .skills {
@@ -305,4 +344,80 @@ section {
   font-size: 1.6rem;
   line-height: 1.8;
   color: var(--text-color);
+}
+.contact{
+  background-color: var(--bg-color);
+}
+.contact h2{
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  font-size: 6rem;
+  text-align: center;
+}
+.contact form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5rem 0;
+  text-align: center;
+}
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.5rem;
+}
+.contact form .btn {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background: var(--main-color);
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+.contact form .btn:hover {
+  background: var(--text-color);
+  color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  transform: scale(1.05);
+}
+.footer {
+  background: var(--bg-color);
+  padding: 2rem 12%;
+  text-align: center;
+  border-top: 2px solid var(--main-color);
+}
+
+.footer-content p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer-icons a {
+  font-size: 3rem;
+  color: var(--main-color);
+  transition: 0.3s ease-in-out;
+}
+
+.footer-icons a:hover {
+  color: var(--text-color);
+  transform: scale(1.2);
 }
