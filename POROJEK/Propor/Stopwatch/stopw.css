@@ -1,0 +1,60 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* pastel pink -> blue */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    background: #ffffffcc; /* putih transparan */
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border: 2px solid #e3d7ff;
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #6a5acd; /* pastel purple */
+    letter-spacing: 1px;
+  }
+  
+  #display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+    background: #f8f9fa;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 2px solid #d6c7ff;
+    display: inline-block;
+  }
+  
+  .buttons button {
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 12px;
+    background: #ffa4a7;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .buttons button:hover {
+    background: #ff9ba3; /* lebih gelap dikit */
+  }
+  
+  .buttons button:nth-child(2) {
+    background: #fdb686; /
+  }
