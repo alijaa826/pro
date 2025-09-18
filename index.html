@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" /> 
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header"> 
+  <a href="#home" class="logo">My<span>Portofolio</span></a> 
+
+  <!-- ✅ Tambahin checkbox buat trigger -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+    <i class="bx bx-menu"></i>
+  </label>
+
+  <nav class="navbar"> 
+    <a href="#home">Home</a> 
+    <a href="#about">About</a> 
+    <a href="#skills">Skills</a> 
+    <a href="#projects">Projects</a> 
+    <a href="#contact">Contact</a> 
+  </nav> 
+</header>
+
+<section class="home" id="home"> 
+    <div class="home-content"> 
+        <h1>Hi, It's <span>Alizza Pasha Fahira</span></h1> 
+        <h3>Welcome to My Portofolio</h3> <p>Perjalanan belajarku, satu baris kode & desain lucu dalam satu tempat 🎨💻</p> 
+    </div>
+    <div class="home-img"> <img src="WhatsApp Image 2025-08-14 at 18.40.34.jpeg" alt=""> </div> 
+</section>
+<section class="about" id="about">
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>Haloo! Nama saya <b>Alizza Pasha Fahira</b>. Saya adalah siswa SMK Plus Pelita Nusantara Bogor jurusan RPL. 
+         Hobi Saya adalah memasak dan memotret, terutama memotret langit 🌌. Saya juga sangat suka bunga 🌸 karena mereka cantik.</p>
+  
+      <div class="about-info">
+        <div class="info-box"><i class="bx bxs-school"></i>SMK Plus Pelita Nusantara</div>
+        <div class="info-box"><i class="bx bx-code-alt"></i>Rekayasa Perangkat Lunak</div>
+        <div class="info-box"><i class="bx bx-camera"></i>Fotografi & Memasak</div>
+      </div>
+  
+    </div>
+  </section>
+  
+<section class="skills" id="skills"> 
+    <h2>My <span>Skills</span></h2> 
+        <div class="skills-icons"> 
+            <i class='bx bxl-html5'></i> 
+            <i class='bx bxl-css3'></i> 
+            <i class='bx bxl-javascript'></i> 
+            <i class='bx bxl-python'></i> 
+            <i class='bx bxl-figma'></i> 
+            <i class="bx bxl-github"></i> 
+        </div> 
+</section>
+<section class="projects" id="projects"> 
+    <div class="projects-content"> 
+        <h2>My <span>Projects</span></h2> 
+        <p>Project-project yang sudah pernah saya buat:</p> 
+        <div class="projects-list"> <div class="project-box"> 
+            <i class="\"></i> <h3>Jam Digital</h3> 
+            <p>Jam digital yang bisa memperlihatkan jam, menit, dan detik. Dibuat dengan menggunakan HTML, CSS, dan JS </p> 
+            <a href="JamDigital/">Lihat Project</a>
+        </div> <div class="project-box"> <i class=""></i> 
+            <h3>Stopwatch</h3> <p>Alat pengukur waktu digital yang dapat digunakan untuk berbagai kegiatan dengan fitur start, pause dan reset</p>
+            <a href="Stopwatch/stopw.html">Lihat Project</a>
+        </div> <div class="project-box">
+            <h3>Web Sederhana</h3> <p>Web sederhana yang berisi tentang Planet di Tata Surya. Menggunakan HTML dan CSS dengan ditambahkan transisi pada CSS nya agar terlihat lebih menarik.</p> 
+            <a href="besme/planet.html">Lihat Project</a>
+        </div> 
+    </div> 
+</div> 
+</section>
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+        <div class="input-group">
+            <div class="input-box">
+                <form action="https://formsubmit.co/alizza826fahira@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Masukkan Nama" required>
+                    <input type="email" name="email" placeholder="Masukkan Email" required>
+                    <input type="text" name="pesan" placeholder="Masukkan Pesan" required>
+                    <button type="submit">Send</button>
+               </form>
+            </div>
+        </div>
+</section>
+    
+<footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Alizza Pasha Fahira | All Rights Reserved</p>
+      <div class="footer-icons">
+        <a href="https://github.com/" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/afhiraap/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="https://x.com/afhiraaa_" target="_blank"><i class="bx bxl-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
