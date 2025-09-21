@@ -1,60 +1,200 @@
+:root {
+  --bg-color: #fff5f5;
+  --second-bg-color: #ffecef;
+  --text-color: #5a3d5c;
+  --main-color: #d291bc;
+  --accent-color: #ffa7c4;
+  --dark-purple: #7c5295;
+  --light-pink: #ffdfea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* pastel pink -> blue */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
-  }
-  
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: rgba(255, 245, 245, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(210, 145, 188, 0.1);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--main-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: var(--main-color);
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--main-color);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 2rem 4rem;
+}
+
+.container {
+  background: rgba(255, 236, 239, 0.8);
+  padding: 40px 50px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(210, 145, 188, 0.2);
+  border: 2px solid var(--light-pink);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 25px;
+  color: var(--dark-purple);
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+}
+
+h1 i {
+  margin-right: 10px;
+  color: var(--main-color);
+}
+
+#display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  background: var(--bg-color);
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 2px solid var(--main-color);
+  display: inline-block;
+  min-width: 250px;
+  box-shadow: 0 5px 15px rgba(210, 145, 188, 0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 100px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:nth-child(1) {
+  background: var(--main-color);
+}
+
+.buttons button:nth-child(2) {
+  background: var(--accent-color);
+}
+
+.buttons button:nth-child(3) {
+  background: var(--dark-purple);
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.buttons button:active {
+  transform: translateY(1px);
+}
+
+.footer {
+  background: var(--second-bg-color);
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(210, 145, 188, 0.2);
+}
+
+.footer p {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
   .container {
-    background: #ffffffcc; /* putih transparan */
-    padding: 30px 40px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border: 2px solid #e3d7ff;
-    backdrop-filter: blur(10px);
+    padding: 30px;
   }
-  
-  h1 {
-    margin-bottom: 20px;
-    color: #6a5acd; /* pastel purple */
-    letter-spacing: 1px;
-  }
-  
+
   #display {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #444;
-    background: #f8f9fa;
+    font-size: 3.2rem;
     padding: 15px 25px;
-    border-radius: 12px;
-    border: 2px solid #d6c7ff;
-    display: inline-block;
   }
-  
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .buttons button {
-    padding: 12px 24px;
-    margin: 5px;
-    border: none;
-    border-radius: 12px;
-    background: #ffa4a7;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+    width: 100%;
+    max-width: 200px;
   }
-  
-  .buttons button:hover {
-    background: #ff9ba3; /* lebih gelap dikit */
-  }
-  
-  .buttons button:nth-child(2) {
-    background: #fdb686; /
-  }
+}
+/* by varrelian */
