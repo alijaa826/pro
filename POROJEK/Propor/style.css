@@ -1,3 +1,4 @@
+
 :root {
   --bg-color: #fff5f5;
   --second-bg-color: #ffecef;
@@ -94,10 +95,7 @@ body {
 .navbar a:hover::after {
   width: 100%;
 }
-section {
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
-}
+
 .home {
   display: flex;
   align-items: center;
@@ -670,3 +668,17 @@ Contact Section .contact {
     width: 80vw;
   }
 }
+
+section {
+  padding: 6rem 9% 4rem;   
+  min-height: auto;        
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  padding: 6rem 9% 4rem;
+  min-height: auto;
+}
+/* by varreliabn  */
