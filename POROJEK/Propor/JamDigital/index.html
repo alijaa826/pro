@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Jam Digital PWTS</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jam Digital - Alizza's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">jam<span>Digital</span></a>
+      <div class="nav-links">
+        <a href="index.html">Kembali ke Portfolio</a>
+        <a href="#about">Tentang</a>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 class="title">SEKARANG PUKUL</h2>
 
-  <h2>SEKARANG PUKUL</h2>
+      <div class="clock-container">
+        <div class="clock" id="clock">
+          <div class="segment" id="hours" data-label="Jam">00</div>
+          <div class="segment" id="minutes" data-label="Menit">00</div>
+          <div class="segment" id="seconds" data-label="Detik">00</div>
+          <div class="segment" id="ampm" data-label="AM/PM">AM</div>
+        </div>
+        <div class="clock reflection">
+          <div class="segment" id="hours-ref">00</div>
+          <div class="segment" id="minutes-ref">00</div>
+          <div class="segment" id="seconds-ref">00</div>
+          <div class="segment" id="ampm-ref">AM</div>
+        </div>
+      </div>
 
-  <div class="clock" id="clock">
-    <div class="segment" id="hours" data-label="Hours">00</div>
-    <div class="segment" id="minutes" data-label="Minutes">00</div>
-    <div class="segment" id="seconds" data-label="Seconds">00</div>
-    <div class="segment" id="ampm" data-label="AM/PM">AM</div>
-  </div>
-
-  <!-- Refleksi -->
-  <div class="clock reflection">
-    <div class="segment" id="hours-ref">00</div>
-    <div class="segment" id="minutes-ref">00</div>
-    <div class="segment" id="seconds-ref">00</div>
-    <div class="segment" id="ampm-ref">AM</div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+      <div class="date" id="date">minggu, 21 september 2025</div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2025 Alizza Pasha Fahira - Jam Digital</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
+<!-- by varrelian athaya isna -->
