@@ -1,5 +1,4 @@
-  <style>
-      :root {
+ :root {
         --bg-color: #fff5f5;
         --second-bg-color: #ffecef;
         --text-color: #5a3d5c;
@@ -623,4 +622,3 @@
           justify-content: center;
         }
       }
-    </style>
