@@ -45,3 +45,4 @@ function reset() {
 }
 
 updateDisplay();
+// by varrelian athaya isna
