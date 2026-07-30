@@ -150,19 +150,25 @@
       }
       .home-img {
         position: relative;
-        width: 32vw;
-        border-radius: 25%;
+        width: clamp(180px, 26vw, 320px);
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
         box-shadow: 0 0 25px var(--main-color);
         overflow: hidden;
         animation: floatImage 4s ease-in-out infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .home-img img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         display: block;
         transition: transform 0.5s ease;
       }
       .home-img:hover img {
-        transform: scale(1.05);
+        transform: none;
       }
       .social-icons {
         display: flex;
@@ -245,11 +251,13 @@
         margin-bottom: 3rem; /* DIKURANGI DARI 5rem */
       }
       .skills-icons {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 3rem; /* spacing between icons */
         justify-content: center;
         align-items: center;
-        gap: 3rem; /* DIKURANGI DARI 5rem */
-        flex-wrap: wrap;
+        max-width: 1100px;
+        margin: 0 auto;
       }
       .skills-icons i {
         font-size: 6rem; /* DIKURANGI DARI 7rem */
@@ -261,6 +269,24 @@
         transition: 0.4s ease-in-out;
         cursor: pointer;
         position: relative;
+      }
+      .skill-img-wrapper {
+        width: 6rem;
+        height: 6rem;
+        padding: 1.5rem;
+        background: var(--bg-color);
+        border-radius: 50%;
+        box-shadow: 0 5px 20px rgba(210, 145, 188, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .skill-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
       }
       .skills-icons i:hover {
         color: var(--bg-color);
@@ -560,7 +586,8 @@
           padding: 6rem 5% 4rem;
         }
         .skills-icons {
-          gap: 2.5rem; /* DIKURANGI DARI 3rem */
+          grid-template-columns: repeat(3, auto);
+          gap: 2.5rem;
         }
       }
       @media (max-width: 768px) {
@@ -664,8 +691,8 @@
         <h1>Hi, I'm <span>Alizza Pasha Fahira</span></h1>
         <h3>Welcome to My Portofolio</h3>
         <p>
-          Perjalanan belajarku, satu baris kode & desain lucu dalam satu tempat
-          🎨💻
+          Perjalanan belajarku, satu baris kode & desain lucu <br>dalam satu 
+          tempat🎨💻
         </p>
         <div class="social-icons">
           <a href="https://github.com/" target="_blank"
@@ -680,17 +707,14 @@
         </div>
       </div>
       <div class="home-img">
-        <img src="POROJEK/Propor/foto-caca" alt="Alizza Pasha Fahira" />
+        <img src="POROJEK/Propor/foto-caca.jpeg" alt="Alizza Pasha Fahira" />
       </div>
     </section>
     <section class="about" id="about">
       <div class="about-content">
         <h2>About <span>Me</span></h2>
-        <p>
-          Haloo! Nama saya <b>Alizza Pasha Fahira</b>. Saya adalah siswa SMK
-          Plus Pelita Nusantara Bogor jurusan RPL. Hobi Saya adalah memasak dan
-          memotret, terutama memotret langit 🌌. Saya juga sangat suka bunga 🌸
-          karena mereka cantik.
+        <p style="text-align: justify">
+          Haloo! Nama saya <b>Alizza Pasha Fahira</b>. Siswa Rekayasa Perangkat Lunak di SMK Plus Pelita Nusantara yang berdedikasi dan berorientasi pada penyelesaian masalah melalui baris kode. Memiliki antusiasme tinggi dalam membangun aplikasi yang fungsional dan berdampak positif. Melalui pengalaman di bidang seni musik dan bernyanyi, saya mengasah kemampuan public speaking, kepercayaan diri, serta kedisiplinan kerja yang kuat. 
         </p>
 
         <div class="about-info">
@@ -711,12 +735,15 @@
       <div class="skills-icons">
         <i class="bx bxl-html5"><span class="skill-tooltip">HTML5</span></i>
         <i class="bx bxl-css3"><span class="skill-tooltip">CSS3</span></i>
-        <i class="bx bxl-javascript"
-          ><span class="skill-tooltip">JavaScript</span></i
-        >
+        <i class="bx bxl-javascript"><span class="skill-tooltip">JavaScript</span></i>
         <i class="bx bxl-python"><span class="skill-tooltip">Python</span></i>
         <i class="bx bxl-figma"><span class="skill-tooltip">Figma</span></i>
         <i class="bx bxl-github"><span class="skill-tooltip">GitHub</span></i>
+        <i class="fab fa-laravel"><span class="skill-tooltip">Laravel</span></i>
+        <div class="skill-img-wrapper"><img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" /><span class="skill-tooltip">MySQL</span></div>
+        <div class="skill-img-wrapper"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Postman_(software)_logo.svg" alt="Postman" /><span class="skill-tooltip">Postman</span></div>
+        <i class="fab fa-php"><span class="skill-tooltip">PHP</span></i>
+      </div>
       </div>
     </section>
     <section class="projects" id="projects">
