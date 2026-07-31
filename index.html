@@ -314,6 +314,44 @@
       .skill-img-wrapper:hover .skill-tooltip {
         opacity: 1;
       }
+      .certificates {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 8rem 9% 4rem;
+      }
+      .certificates h2 {
+        font-size: 5.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .certificate-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+        gap: 2rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .certificate-card {
+        background: var(--bg-color);
+        padding: 1.5rem;
+        border-radius: 2rem;
+        box-shadow: 0 5px 20px rgba(210, 145, 188, 0.15);
+      }
+      .certificate-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 1.5rem;
+        object-fit: cover;
+      }
+      .certificate-card p {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        color: var(--text-color);
+      }
       .projects {
         background: var(--second-bg-color);
         display: flex;
@@ -799,6 +837,19 @@
             </p>
             <a href="POROJEK/Propor/besme/planet.html">View Project</a>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="certificates" id="certificates">
+      <h2>Sertifikat</h2>
+      <div class="certificate-grid">
+        <div class="certificate-card">
+          <img src="sertif1.jpeg" alt="Sertifikat ID-Networkers" />
+          <p>Sertifikat ID-Networkers: Introduction to Capture the Flag</p>
+        </div>
+        <div class="certificate-card">
+          <img src="sertif2.jpg" alt="Sertifikat CodeLamp" />
+          <p>Sertifikat CodeLamp: Game Design Webinar</p>
         </div>
       </div>
     </section>
